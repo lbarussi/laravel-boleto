@@ -1,16 +1,16 @@
 {
-    "name": "eduardokum/laravel-boleto",
+    "name": "lbarussi/laravel-boleto",
     "description": "Biblioteca com boletos para o laravel",
     "keywords": [
-        "eduardokum",
+        "lbarussi",
         "laravel-boleto"
     ],
-    "homepage": "https://github.com/eduardokum/laravel-boleto",
+    "homepage": "https://github.com/lbarussi/laravel-boleto",
     "license": "MIT",
     "authors": [
         {
-            "name": "Eduardo Gusmão",
-            "email": "eduguscontra3@hotmail.com"
+            "name": "Leonardo Barussi",
+            "email": "lhbs.desenv@hotmail.com"
         }
     ],
     "require": {
