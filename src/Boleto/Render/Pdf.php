@@ -585,4 +585,18 @@ class Pdf extends AbstractPdf implements PdfContract
 
         return $pulaLinha;
     }
+
+    public function addUtilization(array $utilizations) {
+        $this->AddPage();
+        $this->SetFont($this->PadraoFont, '', 6);
+
+        $this->Cell(0, $this->desc, $this->_('Discriminativo do boleto'), 0, 1, 'L');
+
+        foreach ($utilizations as $utilization) {
+            $this->Cell(80,3, $utilization["nome_completo"],.5);
+            $this->Cell(80,3, $utilization["descricao"],.5);
+            $this->Cell(10,3, $utilization["valor"],.5);
+            $this->Ln();
+        }
+    }
 }
